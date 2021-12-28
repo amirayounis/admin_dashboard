@@ -1,0 +1,317 @@
+
+  <div class="wrapper">
+   
+       
+    <nav id="sidebar" style="height:100%;position: fixed;top:0;left: 0;">
+      <div >
+      <div class="sidebar-header" style="justify-content: center; display: flex;">
+        <a routerLink='' type="button"><img class="colimg" src="../../../assets/photos/logo.jpg" width="100px" height="100px" style="border-radius: 50%;"></a>
+                    <!-- <strong style="font-size:10px;">EDU</strong> -->
+                     
+                              </div>
+
+
+                              <ul class="list-unstyled components" style="font-size: large;">
+                                <li  style="margin-bottom: 10px;">
+                                  <a routerLink='/admin-dashboard'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                                      <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                      <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                    </svg>
+                                     Home
+                                     </a>
+                                </li>
+                                <li style="margin-bottom: 10px;">
+                                    <a routerLink="/lectureSch" type="button"  (click)="onclick()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+                                        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                                        <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                                      </svg>   
+                                      products
+                                    </a>
+                                  </li>
+                                  <li class="active" style="margin-bottom: 10px;">
+                                    <a routerLink="/examSch" type="button" (click)="onclick()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-plus-fill" viewBox="0 0 16 16">
+                                        <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm.5 4v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0z"/>
+                                      </svg>
+                                      Add product
+                                    </a>
+                                  </li>
+                                  <li style="margin-bottom: 10px;">
+                                    <a routerLink="/stGrade" type="button" (click)="onclick2()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                                      </svg>
+                                     Orders
+                                  </a>
+                                   </li>
+                            </ul>
+                      
+                            <!-- <ul class="list-unstyled CTAs">
+                                <li>
+                                    <a routerLink="/Calendar">
+                                      <i class="fas fa-calendar-alt"></i>
+                                      Share
+                                    
+                                    </a>
+      
+                                </li>
+                                <li>
+                                    <a routerLink="/stEvaluate">
+                                      <i class="fad fa-star-half"></i>
+                                      Add to website
+                                      </a>
+                                </li>
+                            </ul> -->
+                          </div>
+                  </nav>
+
+      <div id="content" style="margin-left: 250px;">
+    
+       
+          <div class="row" >
+            <!-- <div col-12 > -->
+            <div class="card p-3" style="box-shadow: 2px 2px 2px 2px rgba(154, 154, 214, 0.4);
+        border-radius: 10px; background-color: white; display: flex; justify-content: center; width: 100%;">
+                <form [formGroup]="moviesForm"  (ngSubmit)="submitReactiveForm(num.value,namee.value,category.value,lifetime.value,price.value,carmodelid.value)" style="padding-left: 10%; width: 70%;" >
+                  <!-- {{userInfo.id}}  -->
+                  <div class="mb-3">
+                        <label for="num" class="form-label">quantaty</label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="num"
+                          value="{{product.quantaty}}"
+                          name="num"
+                          formControlName="num"
+                          #num
+                        />
+                        <div
+                        *ngIf="
+                          moviesFormControls.itemid?.touched &&
+                          !moviesFormControls.itemid?.valid
+                        "
+                      >
+                        <small
+                          class="text-danger"
+                          *ngIf="moviesFormControls.itemid.errors?.required"
+                          >id required</small
+                        >
+                       
+                        
+                       
+                        
+                      </div>
+                      </div>
+                     
+                
+                     
+                
+                
+                      <div class="mb-3">
+                        <label for="namee" class="form-label">name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="namee"
+                          name="namee"
+                          formControlName="namee"
+                          #namee
+                        />
+                        <div
+                        *ngIf="
+                          moviesFormControls.namee?.touched &&
+                          !moviesFormControls.namee?.valid
+                        "
+                      >
+                        <small
+                          class="text-danger"
+                          *ngIf="moviesFormControls.namee.errors?.required"
+                          >name required</small
+                        >
+                        
+                       
+                        
+                      </div>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="category" class="form-label">category</label>
+                        <select
+                          class="form-control"
+                          id="category"
+                          name="category"
+                          formControlName="category"
+                          #category
+                        >
+                        <OPtion value="athores">others</OPtion>
+                        <OPtion value="Accessories">Accessories</OPtion>
+                        <OPtion value="car_spairs">car_spairs</OPtion>
+                        </select>
+                        <div
+                        *ngIf="
+                          moviesFormControls.category?.touched &&
+                          !moviesFormControls.category?.valid
+                        "
+                      >
+                        <small
+                          class="text-danger"
+                          *ngIf="moviesFormControls.category.errors?.required"
+                          >category required</small
+                        >
+                        
+                       
+                        
+                      </div>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="lifetime" class="form-label">life time in monthes</label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="lifetime"
+                          name="lifetime"
+                          formControlName="lifetime"
+                          #lifetime
+                        />
+                        <div
+                        *ngIf="
+                          moviesFormControls.lifetime?.touched &&
+                          !moviesFormControls.lifetime?.valid
+                        "
+                      >
+                        <small
+                          class="text-danger"
+                          *ngIf="moviesFormControls.lifetime.errors?.required"
+                          >lifetime required</small
+                        >
+                        
+                       
+                        
+                      </div>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="price" class="form-label">price</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="price"
+                          name="price"
+                          formControlName="price"
+                          #price
+                        />
+                        <div
+                        *ngIf="
+                          moviesFormControls.price?.touched &&
+                          !moviesFormControls.price?.valid
+                        "
+                      >
+                        <small
+                          class="text-danger"
+                          *ngIf="moviesFormControls.price.errors?.required"
+                          >price required</small
+                        >
+                        
+                       
+                        
+                      </div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="brandid" class="form-label">car Brand</label>
+                        <select
+                          type="text"
+                          class="form-control"
+                          id="brandid"
+                          name="brandid"
+                          formControlName="brandid"
+                          (change)="change($event)"
+                          #brandid
+                        >
+                        <option *ngFor="let i of (brands)" value="{{i.id}}">{{i.name}}</option>
+                        </select>
+                        <div
+                        *ngIf="
+                          moviesFormControls.carmodelid?.touched &&
+                          !moviesFormControls.carmodelid?.valid
+                        "
+                      >
+                        <small
+                          class="text-danger"
+                          *ngIf="moviesFormControls.carmodelid.errors?.required"
+                          >car model id required</small
+                        >
+                        
+                       
+                        
+                      </div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="carmodelid" class="form-label">car model</label>
+                        <select
+                          type="text"
+                          class="form-control"
+                          id="carmodelid"
+                          name="carmodelid"
+                          formControlName="carmodelid"
+                          #carmodelid
+                        >
+                        <option *ngFor="let i of (my)" value="{{i.id}}">{{i.name}}</option>
+                        </select>
+                        <div
+                        *ngIf="
+                          moviesFormControls.carmodelid?.touched &&
+                          !moviesFormControls.carmodelid?.valid
+                        "
+                      >
+                        <small
+                          class="text-danger"
+                          *ngIf="moviesFormControls.carmodelid.errors?.required"
+                          >car model id required</small
+                        >
+                        
+                       
+                        
+                      </div>
+                      </div>
+                   <div class="mb-3">
+                      <input type="file" id="file" #userphoto 
+                       name="file" autocomplrtr="off"
+                       (change)="selectFile($event)"
+                       formControlName="image" 
+                       writeFile="true"/>
+                     </div>
+                       <img  *ngIf="isAddMode==false" width="100px" height="100px" [src]="product.imag" >
+                
+                     
+                    <button
+                      style="width: 20%;"  
+                      type="submit"
+                      class="btn btn-dark "
+                      *ngIf="isAddMode==false"
+                    >
+                     Edit
+                    </button>
+                    <button
+                      type="submit"
+                      class="btn btn-dark m-4"
+                      *ngIf="isAddMode==true"
+                      style="width: 20%;" 
+                    >
+                      Add Item
+                    </button>
+                   
+                   
+                  </form>
+                 
+                  
+               
+              </div>
+          
+            </div>  
+      </div>
+
+
+

@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "lab2-7dd41": {
+      "hosting": {
+        "auto-car": [
+          "lab2-7dd41"
+        ]
+      }
+    },
+    "carparts-3d290": {
+      "hosting": {
+        "auto-car": [
+          "carparts-3d290"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "carparts-3d290"
+  }
+}

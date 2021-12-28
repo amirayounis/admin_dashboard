@@ -1,0 +1,101 @@
+<div class="bgbd">
+  <div class="container">
+    <div class="row">
+        <div class="col-6">
+            <img src="../../assets/photos/login.jpg" alt="image"
+            style="border-radius: 1%; height: 400px;"> 
+        </div>
+        <div class="col-6" >
+            <div class="formgroup bg-light" style=" padding: 20px; height: 400px; border-radius: 1%;">
+    <form [formGroup]="moviesForm" (ngSubmit)="submitReactiveForm(email.value,password.value)" >
+
+        
+    
+        <div class="mb-3">
+          <a href="#" class="close"></a>
+            <label for="emailid" class="form-label">email</label>
+            <input
+              type="text"
+              class="form-control"
+              id="emailid"
+              name="email"
+              formControlName="email"
+              #email
+            />
+            <div
+            *ngIf="
+              moviesFormControls.email?.touched &&
+              !moviesFormControls.email?.valid
+            "
+          >
+            <small
+              class="text-danger"
+              *ngIf="moviesFormControls.email.errors?.required"
+              >email required</small
+            >
+            <small
+            class="text-danger"
+            *ngIf="moviesFormControls.email.errors?.pattern"
+            >invalid email format</small
+          >
+            
+           
+            
+          </div>
+          </div>
+         
+    
+         
+    
+    
+          <div class="mb-3">
+            <label for="password" class="form-label">password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              formControlName="password"
+              #password
+            />
+            <div
+            *ngIf="
+              moviesFormControls.password?.touched &&
+              !moviesFormControls.password?.valid
+            "
+          >
+            <small
+              class="text-danger"
+              *ngIf="moviesFormControls.password.errors?.required"
+              >password required</small
+            >
+            <small
+            class="text-danger"
+            *ngIf="moviesFormControls.password.errors?.pattern"
+            >invalid password exaple sohila@123</small
+          >
+           
+            
+          </div>
+          </div>
+    
+    
+         
+        <button
+          type="submit"
+          class="btn btn-primary m-4"
+          
+        >
+          Log In
+        </button>
+        <div class="text-danger">{{invalid}}</div>
+        <p>don't have account <a type="button" (click)="onclick()" class="colors">register</a></p>
+      </form>
+     
+      
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+      

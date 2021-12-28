@@ -1,0 +1,123 @@
+
+  <div class="wrapper">
+   
+       
+    
+
+      <div id="content" style="margin-left: 250px;">
+    
+       
+          <div class="row" >
+            <!-- <div col-12 > -->
+            <div class="card p-3" style="box-shadow: 2px 2px 2px 2px rgba(154, 154, 214, 0.4);
+        border-radius: 10px; background-color: white; display: flex; justify-content: center; width: 100%;">
+                <form [formGroup]="moviesForm" (ngSubmit)="submitReactiveForm()" style="padding-left: 10%; width: 70%;" >
+                  <!-- {{userInfo.id}}  -->
+                  <div class="mb-3">
+                        <label for="num" class="form-label">priod</label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="priod"
+                          name="priod"
+                          formControlName="priod"
+                          #num
+                        />
+                        <div
+                        *ngIf="
+                          moviesFormControls.itemid?.touched &&
+                          !moviesFormControls.itemid?.valid
+                        "
+                      >
+                        <small
+                          class="text-danger"
+                          *ngIf="moviesFormControls.itemid.errors?.required"
+                          >id required</small
+                        >
+                       
+                        
+                       
+                        
+                      </div>
+                      </div>
+ 
+                      <div class="mb-3">
+                        <label for="brandid" class="form-label">serviceid</label>
+                        <select
+                          type="text"
+                          class="form-control"
+                          id="serviceid"
+                          name="serviceid"
+                          formControlName="serviceid"
+                          #serviceid
+                        >
+                        <option *ngFor="let i of (servics)" value="{{i.id}}">{{i.name}}</option>
+                        </select>
+                        <div
+                        *ngIf="
+                          moviesFormControls.carmodelid?.touched &&
+                          !moviesFormControls.carmodelid?.valid
+                        "
+                      >
+                        <small
+                          class="text-danger"
+                          *ngIf="moviesFormControls.carmodelid.errors?.required"
+                          >car model id required</small
+                        >
+                        
+                       
+                        
+                      </div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="carmodelid" class="form-label">car model</label>
+                        <select
+                          type="text"
+                          class="form-control"
+                          id="carmodelid"
+                          name="carmodelid"
+                          formControlName="carmodelid"
+                          #carmodelid
+                        >
+                        <option *ngFor="let i of (models)" value="{{i.id}}">{{i.name}}</option>
+                        </select>
+                        <div
+                        *ngIf="
+                          moviesFormControls.carmodelid?.touched &&
+                          !moviesFormControls.carmodelid?.valid
+                        "
+                      >
+                        <small
+                          class="text-danger"
+                          *ngIf="moviesFormControls.carmodelid.errors?.required"
+                          >car model id required</small
+                        >
+                        
+                       
+                        
+                      </div>
+                      </div>
+                
+                
+                     
+                    <button
+                      type="submit"
+                      class="btn btn-dark m-4"
+                      
+                    >
+                      Add Item
+                    </button>
+                   
+                   
+                  </form>
+                 
+                  
+               
+              </div>
+          
+            </div>  
+      </div>
+
+
+
+

@@ -1,0 +1,173 @@
+
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar" style="height:100%;position: fixed;top:0;left: 0;">
+        <div >
+        <div class="sidebar-header" style="justify-content: center; display: flex;">
+          <a routerLink='' type="button"><img class="colimg" src="../../../assets/photos/logo.jpg" width="100px" height="100px" style="border-radius: 50%;"></a>
+                      <!-- <strong style="font-size:10px;">EDU</strong> -->
+                       
+                                </div>
+  
+  
+                                <ul class="list-unstyled components" style="font-size: large;">
+                                  <li class="active" style="margin-bottom: 10px;">
+                                    <a routerLink='admin-dashboard'>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                                      </svg>
+                                       Home
+                                       </a>
+                                  </li>
+                                  <li style="margin-bottom: 10px;">
+                                      <a routerLink="/lectureSch" type="button"  (click)="onclick2()">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+                                          <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                                          <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                                        </svg>   
+                                        products
+                                      </a>
+                                    </li>
+                                    <li style="margin-bottom: 10px;">
+                                      <a routerLink="/examSch" type="button" (click)="onclick()">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-plus-fill" viewBox="0 0 16 16">
+                                          <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm.5 4v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0z"/>
+                                        </svg> 
+                                        Add product
+                                      </a>
+                                    </li>
+                                    <li style="margin-bottom: 10px;">
+                                      <a routerLink="/stGrade" type="button" (click)="onclick3()">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+                                          <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                                        </svg>
+                                       Orders
+                                    </a>
+                                     </li>
+                              </ul>
+                        
+                              <!-- <ul class="list-unstyled CTAs">
+                                  <li>
+                                      <a routerLink="/Calendar">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        Share
+                                      
+                                      </a>
+        
+                                  </li>
+                                  <li>
+                                      <a routerLink="/stEvaluate">
+                                        <i class="fad fa-star-half"></i>
+                                        Add to website
+                                        </a>
+                                  </li>
+                              </ul> -->
+                            </div>
+                    </nav>
+  
+    <!-- Page Content  -->
+    <div id="content" style="margin-left: 250px;">
+    
+      <div class="container" style=" display: flex; flex-direction: row;">
+        <div class="row "  >
+          <!-- <div class="col-md-4" style="margin-top: 30px; text-align: center; "> -->
+         <!-- <div class="col-1"></div>    -->
+          <div class="col-3">
+              <div class="counter blue">
+                  <div class="counter-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-boxes" viewBox="0 0 16 16">
+                      <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"/>
+                    </svg>
+                  </div>
+                  <div class="counter-content">
+                      <h3>product</h3>
+                      <span class="counter-value">{{products.length}}</span>
+                  </div>
+              </div>
+          </div>
+          <!-- <div class="col-1"></div>    -->
+          <div class="col-3">
+            <div class="counter red">
+                <div class="counter-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                  </svg>
+                </div>
+                <div class="counter-content">
+                    <h3>orders</h3>
+                    <span class="counter-value">{{$orders.length}}</span>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="col-1"></div>    -->
+        <div class="col-3">
+            <div class="counter grey">
+                <div class="counter-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"/>
+                    <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"/>
+                    <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z"/>
+                    <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"/>
+                  </svg>
+                </div>
+                <div class="counter-content">
+                    <h3>cash</h3>
+                    <span class="counter-value">{{cash}}</span>
+                </div>
+            </div>
+        </div>
+          <!-- </div> -->
+          <!-- <div class="col-1"></div>    -->
+          <div class="col-3">
+              <div class="counter gray">
+                  <div class="counter-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="color:gold" width="30" height="30" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                  </div>
+                  <div class="counter-content">
+                      <h3>Rating</h3>
+                      <span class="counter-value">{{rating}}</span>
+                      <p *ngIf="rating>=4" >perrity good</p>
+                      <p *ngIf="rating <2 ||rating ==2" style="color: red;" >bad rating</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="line"></div>
+  
+      <div class="container" style="background-image: url(../../assets/photos/6bec91d6-8f83-4168-af69-efca5bede4e2.jpg); height: 300px; background-position:center; background-repeat: no-repeat; background-size: cover;">
+        <!-- <img src="../../assets/photos/24006003-2aab-495d-ae8a-28b72cc0a4e4.jpg" /> -->
+        <!-- <div class="row">
+          <div class="col-md-6">
+              <div class="card" style="width: 23rem; height: 27rem;
+              text-align: center; box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3); border-radius: 10px ;">
+                  <!-- <img src="{{event[1].eventurl}}" class="card-img-top" alt="..."> -->
+                  <!-- <div class="card-body">
+                    <p class="card-text" style="margin-top: 20px;">Provider</p>
+                    <p style="color: rgb(102, 102, 102);">Hello</p>
+                    <button type="button" class="btn btn-dark" style="margin-top: 3 0px;">more info.</button>
+                  </div>
+                </div>
+          </div>
+          <div class="col-md-6"> -->
+              <!-- <div class="card" style="width: 23rem; height: 27rem; 
+              text-align: center; box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);border-radius: 10px ;">
+                  <!-- <img src="{{event[2].eventurl}}" class="card-img-top" alt="..."> -->
+                  <!-- <div class="card-body">
+                    <p class="card-text">Hello</p>
+                    <p style="color: rgb(102, 102, 102);">Provider</p>
+                    <button type="button" class="btn btn-dark" >more info.</button>
+                  </div>
+                </div> --> 
+                <!-- <img src="../../assets/photos/24006003-2aab-495d-ae8a-28b72cc0a4e4.jpg"/>
+          </div>
+        </div> -->
+      </div>
+  
+       </div>
+  </div>
+  

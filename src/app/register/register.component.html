@@ -1,0 +1,178 @@
+<div class="container">
+    <div class="row">
+        <div class="col-7">
+            <img src="/assets/photos/log.jpg" alt="image"> 
+        </div>
+        <div class="col-5">
+            <div class="formgroup m-2 bg-light">
+        <form [formGroup]="moviesForm" (ngSubmit)="submitReactiveForm(email.value,password.value,name.value,cr.value)" class="m-3">
+
+        <div class="mb-3">
+          <label for="cr" class="form-label">C-R</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cr"
+            name="cr"
+            #cr
+            formControlName="cr"
+          />
+          <div
+          *ngIf="
+            moviesFormControls.cr?.touched &&
+            !moviesFormControls.cr?.valid
+          "
+        >
+          <small
+            class="text-danger"
+            *ngIf="moviesFormControls.cr.errors?.required"
+            >Required</small
+          >
+          
+        </div>
+        </div>
+       
+    
+        <div class="mb-3">
+            <label for="emailid" class="form-label">email</label>
+            <input
+              type="text"
+              class="form-control"
+              id="emailid"
+              name="email"
+              formControlName="email"
+              #email
+            />
+            <div
+            *ngIf="
+              moviesFormControls.email?.touched &&
+              !moviesFormControls.email?.valid
+            "
+          >
+            <small
+              class="text-danger"
+              *ngIf="moviesFormControls.email.errors?.required"
+              >email required</small
+            >
+            <small
+            class="text-danger"
+            *ngIf="moviesFormControls.email.errors?.pattern"
+            >invalid email format</small
+          >
+            
+           
+            
+          </div>
+          </div>
+         
+    
+          <div class="mb-3">
+            <label for="usernameid" class="form-label">user name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="usernameid"
+              name="username"
+              #name
+              formControlName="username"
+            />
+            <div
+            *ngIf="
+              moviesFormControls.username?.touched &&
+              !moviesFormControls.username?.valid
+            "
+          >
+            <small
+              class="text-danger"
+              *ngIf="moviesFormControls.username.errors?.required"
+              >username required</small
+            >
+            <small
+            class="text-danger"
+            *ngIf="moviesFormControls.username.errors?.pattern"
+            >white-spaces not allowed </small
+          >
+           
+            
+          </div>
+          </div>
+    
+    
+          <div class="mb-3">
+            <label for="password" class="form-label">password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              formControlName="password"
+              #password
+            />
+            <div
+            *ngIf="
+              moviesFormControls.password?.touched &&
+              !moviesFormControls.password?.valid
+            "
+          >
+            <small
+              class="text-danger"
+              *ngIf="moviesFormControls.password.errors?.required"
+              >password required</small
+            >
+            <small
+            class="text-danger"
+            *ngIf="moviesFormControls.password.errors?.pattern"
+            >invalid password </small
+          >
+           
+            
+          </div>
+          </div>
+    
+    
+          <div class="mb-3">
+            <label for="conpasswordid" class="form-label">confirm password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="conpasswordid"
+              name="conpassword"
+              formControlName="conpassword"
+            />
+            <div
+            *ngIf="
+              moviesFormControls.conpassword?.touched &&
+              !moviesFormControls.conpassword?.valid
+            "
+          >
+            <small
+              class="text-danger"
+              *ngIf="moviesFormControls.conpassword.errors?.required"
+              >password required</small
+            >
+            <small
+            class="text-danger"
+            *ngIf="moviesFormControls.conpassword.errors?.confirmedValidator"
+            >password required</small
+          >
+           
+            
+          </div>
+          </div>
+        <button
+          type="submit"
+          class="btn btn-primary my-5"
+          
+        >
+          Submit
+        </button>
+        <p>already have account <a type="button" (click)="onclick()" class="colors">log in</a></p>
+      </form>
+    </div>
+    </div>
+    </div>
+      
+    </div>
+      
+    
+
